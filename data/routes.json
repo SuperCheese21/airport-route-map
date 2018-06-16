@@ -1,719 +1,1028 @@
 {
-	"IND": [{
-		"destination": "LAX",
+    "KIND": [{
+        "destination": "KLAX",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "AA",
+            "operatorIata": "AA"
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "KAUS",
+        "airlines": [{
+            "iata": "F9",
+            "operatorIata": "F9"
+        }, {
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "G4",
+            "operatorIata": "G4"
+        }]
+    }, {
+        "destination": "KATL",
+        "airlines": [{
+            "iata": "DL",
+            "operatorIata": "DL"
+        }, {
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KBOS",
+        "airlines": [{
+            "iata": "DL",
+            "operatorIata": "DL"
+        }, {
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KCLT",
+        "airlines": [{
+            "iata": "AA",
+            "operatorIata": "AA"
+        }]
+    }, {
+        "destination": "KDFW",
+        "airlines": [{
+            "iata": "AA",
+            "operatorIata": "AA"
+        }]
+    }, {
+        "destination": "KVPS",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KRSW",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "F9",
+            "operatorIata": "F9",
+            "seasonal": true
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KJAX",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4"
+        }]
+    }, {
+        "destination": "KMYR",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KMCO",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "F9",
+            "operatorIata": "F9"
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "KPHL",
+        "airlines": [{
+            "iata": "AA",
+            "operatorIata": "AA"
+        }, {
+            "iata": "F9",
+            "operatorIata": "F9",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KPIT",
+        "airlines": [{
+            "iata": "J1",
+            "operatorIata": "J1"
+        }]
+    }, {
+        "destination": "KRDU",
+        "airlines": [{
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "KSFO",
+        "airlines": [{
+            "iata": "UA",
+            "operatorIata": "UA"
+        }, {
+            "iata": "AS",
+            "operatorIata": "AS"
+        }]
+    }, {
+        "destination": "KSEA",
+        "airlines": [{
+            "iata": "AS",
+            "operatorIata": "AS"
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "CYYZ",
+        "airlines": [{
+            "iata": "AC",
+            "operatorIata": "AC"
+        }]
+    }, {
+        "destination": "MMUN",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN",
+            "seasonal": true
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL",
+            "seasonal": true
+        }, {
+            "iata": "X1",
+            "operatorIata": "Y4",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KMDW",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KDAL",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KDTW",
+        "airlines": [{
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "KHOU",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KMCI",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KMIA",
+        "airlines": [{
+            "iata": "AA",
+            "operatorIata": "AA"
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KMSY",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN",
+            "seasonal": true
+        }, {
+            "iata": "G4",
+            "operatorIata": "G4",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KEWR",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "UA",
+            "operatorIata": "UA"
+        }]
+    }, {
+        "destination": "KSFB",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4"
+        }]
+    }, {
+        "destination": "KPHX",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "AA",
+            "operatorIata": "AA"
+        }]
+    }, {
+        "destination": "MDPC",
+        "airlines": [{
+            "iata": "X1",
+            "operatorIata": "WQ",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KSLC",
+        "airlines": [{
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "KSRQ",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4"
+        }]
+    }, {
+        "destination": "KPIE",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4"
+        }]
+    }, {
+        "destination": "KDCA",
+        "airlines": [{
+            "iata": "AA",
+            "operatorIata": "AA"
+        }]
+    }, {
+        "destination": "KBWI",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KCHS",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KORD",
+        "airlines": [{
+            "iata": "UA",
+            "operatorIata": "UA"
+        }, {
+            "iata": "AA",
+            "operatorIata": "AA"
+        }]
+    }, {
+        "destination": "KDEN",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "F9",
+            "operatorIata": "F9"
+        }, {
+            "iata": "UA",
+            "operatorIata": "UA"
+        }]
+    }, {
+        "destination": "KFLL",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "G4",
+            "operatorIata": "G4"
+        }]
+    }, {
+        "destination": "KIAH",
+        "airlines": [{
+            "iata": "UA",
+            "operatorIata": "UA"
+        }]
+    }, {
+        "destination": "KLAS",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "G4",
+            "operatorIata": "G4"
+        }, {
+            "iata": "F9",
+            "operatorIata": "F9"
+        }]
+    }, {
+        "destination": "KMSP",
+        "airlines": [{
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "KJFK",
+        "airlines": [{
+            "iata": "AA",
+            "operatorIata": "AA"
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
+    }, {
+        "destination": "KOAK",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN",
+            "start": "2018-07-15"
+        }]
+    }, {
+        "destination": "LFPG",
+        "airlines": [{
+            "iata": "DL",
+            "operatorIata": "DL",
+            "start": "2018-05-24"
+        }]
+    }, {
+        "destination": "KIWA",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KPGD",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4"
+        }]
+    }, {
+        "destination": "KSAN",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN",
+            "seasonal": true
+        }, {
+            "iata": "F9",
+            "operatorIata": "F9",
+            "start": "2018-08-13"
+        }]
+    }, {
+        "destination": "KSAV",
+        "airlines": [{
+            "iata": "G4",
+            "operatorIata": "G4",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KTPA",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }, {
+            "iata": "F9",
+            "operatorIata": "F9",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "KIAD",
+        "airlines": [{
+            "iata": "UA",
+            "operatorIata": "UA"
+        }]
+    }],
+    "KPDX": [{
+        "destination": "MMMX",
+        "airlines": [{
+            "iata": "AM",
+            "operatorIata": "AM"
+        }]
+    }, {
+        "destination": "CYYZ",
+        "airlines": [{
+            "iata": "AC",
+            "operatorIata": "AC",
+            "seasonal": true
+        }]
+    }, {
+        "destination": "CYYC",
+        "airlines": [{
+            "iata": "AC",
+            "operatorIata": "AC"
+        }]
+    }, {
+        "destination": "CYVR",
+        "airlines": [{
+            "iata": "AC",
+            "operatorIata": "AC"
+        }, {
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+    }, {
+		"destination": "KABQ",
 		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "PANC",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "B6",
+			"operatorIata": "B6",
+			"seasonal": true
 		}]
 	}, {
-		"destination": "AUS",
+		"destination": "KAUS",
 		"airlines": [{
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "F9",
+			"operatorIata": "F9"
 		}, {
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN",
+			"seasonal": true
 		}]
 	}, {
-		"destination": "ATL",
+		"destination": "KBLI",
 		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS",
+			"end": "2018-08-25"
+		}]
+	}, {
+		"destination": "KBIL",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KBOI",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KBOS",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "B6",
+			"operatorIata": "B6"
 		}]
 	}, {
-		"destination": "BOS",
+		"destination": "KBZN",
 		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KBUR",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN"
 		}]
 	}, {
-		"destination": "CLT",
+		"destination": "KORD",
 		"airlines": [{
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "DFW",
-		"airlines": [{
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "VPS",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "RSW",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AA",
+			"operatorIata": "AA"
 		}, {
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "JAX",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "MYR",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "LAX",
-		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "NK",
+			"operatorIata": "NK",
+			"seasonal": true
 		}, {
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "UA",
+			"operatorIata": "UA"
 		}]
 	}, {
-		"destination": "MCO",
+		"destination": "KDFW",
 		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AA",
+			"operatorIata": "AA"
+		}]
+	}, {
+		"destination": "KDAL",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN"
 		}]
 	}, {
-		"destination": "PHL",
+		"destination": "KEUG",
 		"airlines": [{
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KFAT",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "PHNL",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "PIT",
-		"airlines": [{
-			"code": "J1",
-			"operator": "J1",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "RDU",
-		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "SFO",
-		"airlines": [{
-			"code": "UA",
-			"operator": "UA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "DL",
+			"operatorIata": "DL",
+			"seasonal": true
 		}, {
-			"code": "AS",
-			"operator": "AS",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "HA",
+			"operatorIata": "HA"
 		}]
 	}, {
-		"destination": "SEA",
+		"destination": "PHOG",
 		"airlines": [{
-			"code": "AS",
-			"operator": "AS",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "HA",
+			"operatorIata": "HA"
 		}]
 	}, {
-		"destination": "YYZ",
+		"destination": "PHKO",
 		"airlines": [{
-			"code": "AC",
-			"operator": "AC",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}]
 	}, {
-		"destination": "CUN",
+		"destination": "KLAS",
 		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN"
 		}, {
-			"code": "X1",
-			"operator": "Y4",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "NK",
+			"operatorIata": "NK"
 		}]
 	}, {
-		"destination": "MDW",
+		"destination": "KLAX",
 		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "DAL",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "DTW",
-		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "HOU",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "MCI",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "MIA",
-		"airlines": [{
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "MSY",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AA",
+			"operatorIata": "AA"
 		}, {
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "EWR",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "DL",
+			"operatorIata": "DL"
 		}, {
-			"code": "UA",
-			"operator": "UA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN"
 		}]
 	}, {
-		"destination": "SFB",
+		"destination": "KMFR",
 		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}]
 	}, {
-		"destination": "PHX",
+		"destination": "KMSP",
 		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "PUJ",
-		"airlines": [{
-			"code": "X1",
-			"operator": "WQ",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "SLC",
-		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "SRQ",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "PIE",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "DCA",
-		"airlines": [{
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "BWI",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "CHS",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "ORD",
-		"airlines": [{
-			"code": "UA",
-			"operator": "UA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "DL",
+			"operatorIata": "DL"
 		}, {
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "SY",
+			"operatorIata": "SY"
 		}]
 	}, {
-		"destination": "DEN",
+		"destination": "KMSO",
 		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KEWR",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KJFK",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "DL",
+			"operatorIata": "DL"
 		}, {
-			"code": "UA",
-			"operator": "UA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "B6",
+			"operatorIata": "B6"
 		}]
 	}, {
-		"destination": "FLL",
+		"destination": "KOAK",
 		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN"
 		}]
 	}, {
-		"destination": "IAH",
+		"destination": "KONT",
 		"airlines": [{
-			"code": "UA",
-			"operator": "UA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "LAS",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN"
+		}]
+	}, {
+		"destination": "KSNA",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KMCO",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "SY",
+			"operatorIata": "SY",
+			"seasonal": true
 		}]
 	}, {
-		"destination": "MSP",
+		"destination": "KPSP",
 		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}]
 	}, {
-		"destination": "JFK",
+		"destination": "KPHX",
 		"airlines": [{
-			"code": "AA",
-			"operator": "AA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}, {
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "OAK",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": "2018-07-15",
-			"end": null
-		}]
-	}, {
-		"destination": "CDG",
-		"airlines": [{
-			"code": "DL",
-			"operator": "DL",
-			"seasonal": false,
-			"cargo": false,
-			"start": "2018-05-24",
-			"end": null
-		}]
-	}, {
-		"destination": "AZA",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "PGD",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "SAN",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "SAV",
-		"airlines": [{
-			"code": "G4",
-			"operator": "G4",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
-		}]
-	}, {
-		"destination": "TPA",
-		"airlines": [{
-			"code": "WN",
-			"operator": "WN",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AA",
+			"operatorIata": "AA"
 		}, {
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": true,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "WN",
+			"operatorIata": "WN"
 		}]
 	}, {
-		"destination": "IAD",
+		"destination": "KRDM",
 		"airlines": [{
-			"code": "UA",
-			"operator": "UA",
-			"seasonal": false,
-			"cargo": false,
-			"start": null,
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
 		}]
 	}, {
-		"destination": "SAN",
+		"destination": "KRNO",
 		"airlines": [{
-			"code": "F9",
-			"operator": "F9",
-			"seasonal": false,
-			"cargo": false,
-			"start": "2018-08-13",
-			"end": null
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KSMF",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}, {
+			"iata": "WN",
+			"operatorIata": "WN"
+		}]
+	}, {
+		"destination": "KSLC",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}, {
+			"iata": "DL",
+			"operatorIata": "DL"
+		}]
+	}, {
+		"destination": "KSAN",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}, {
+			"iata": "WN",
+			"operatorIata": "WN"
+		}]
+	}, {
+		"destination": "KSFO",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}, {
+			"iata": "WN",
+			"operatorIata": "WN",
+			"end": "2018-11-03"
+		}, {
+			"iata": "UA",
+			"operatorIata": "UA"
+		}]
+	}, {
+		"destination": "KSJC",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}, {
+			"iata": "WN",
+			"operatorIata": "WN"
+		}]
+	}, {
+		"destination": "KSBA",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KSTS",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KSEA",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}, {
+			"iata": "DL",
+			"operatorIata": "DL"
+		}]
+	}, {
+		"destination": "KGEG",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KPSC",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"end": "2018-08-25"
+		}]
+	}, {
+		"destination": "KDCA",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS"
+		}]
+	}, {
+		"destination": "KATL",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}, {
+			"iata": "DL",
+			"operatorIata": "DL"
+		}]
+	}, {
+		"destination": "KBWI",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}, {
+			"iata": "WN",
+			"operatorIata": "WN",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KDTW",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}, {
+			"iata": "DL",
+			"operatorIata": "DL"
+		}]
+	}, {
+		"destination": "KGPI",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KMCI",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}, {
+			"iata": "WN",
+			"operatorIata": "WN"
+		}]
+	}, {
+		"destination": "PHLI",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KMKE",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KOMA",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KPHL",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}, {
+			"iata": "AA",
+			"operatorIata": "AA",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "MMPR",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "MMSD",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KSUN",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KTUS",
+		"airlines": [{
+			"iata": "AS",
+			"operatorIata": "AS",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KCLT",
+		"airlines": [{
+			"iata": "AA",
+			"operatorIata": "AA"
+		}]
+	}, {
+		"destination": "KPDT",
+		"airlines": [{
+			"iata": "4B",
+			"operatorIata": "4B"
+		}]
+	}, {
+		"destination": "EDDF",
+		"airlines": [{
+			"iata": "DE",
+			"operatorIata": "DE",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "EHAM",
+		"airlines": [{
+			"iata": "DL",
+			"operatorIata": "DL"
+		}]
+	}, {
+		"destination": "RJAA",
+		"airlines": [{
+			"iata": "DL",
+			"operatorIata": "DL"
+		}]
+	}, {
+		"destination": "EGLL",
+		"airlines": [{
+			"iata": "DL",
+			"operatorIata": "DL",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KDEN",
+		"airlines": [{
+			"iata": "F9",
+			"operatorIata": "F9"
+		}, {
+			"iata": "WN",
+			"operatorIata": "WN"
+		}, {
+			"iata": "UA",
+			"operatorIata": "UA"
+		}]
+	}, {
+		"destination": "KCLE",
+		"airlines": [{
+			"iata": "F9",
+			"operatorIata": "F9",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "BIKF",
+		"airlines": [{
+			"iata": "FI",
+			"operatorIata": "FI",
+			"seasonal": true
+		}]
+	}, {
+		"destination": "KLGB",
+		"airlines": [{
+			"iata": "B6",
+			"operatorIata": "B6"
+		}]
+	}, {
+        "destination": "KMDW",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+        "destination": "KHOU",
+        "airlines": [{
+            "iata": "WN",
+            "operatorIata": "WN"
+        }]
+    }, {
+		"destination": "KSTL",
+		"airlines": [{
+			"iata": "WN",
+			"operatorIata": "WN"
+		}]
+	}, {
+		"destination": "KIAH",
+		"airlines": [{
+			"iata": "UA",
+			"operatorIata": "UA"
+		}]
+	}, {
+		"destination": "KEWR",
+		"airlines": [{
+			"iata": "UA",
+			"operatorIata": "UA"
+		}]
+	}, {
+		"destination": "KIAD",
+		"airlines": [{
+			"iata": "UA",
+			"operatorIata": "UA"
+		}]
+	}, {
+		"destination": "MMGL",
+		"airlines": [{
+			"iata": "Y4",
+			"operatorIata": "Y4"
 		}]
 	}]
 }

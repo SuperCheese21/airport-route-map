@@ -1,31 +1,31 @@
 const airportData = require('./data/airports.json');
 const routes = require('./data/routes.json');
 
-function getRoutes(iata) {
-    return routes[iata];
+function getRoutes(icao) {
+    return routes[icao];
 }
 
-function getAirportCoords(iata) {
-    const airport = airportData[iata];
+function getAirportCoords(icao) {
+    const airport = airportData[icao];
     if (airport) {
         return {
-            lat: airport.latitude_deg,
-            lng: airport.longitude_deg
+            lat: parseFloat(airport.latitude_deg),
+            lng: parseFloat(airport.longitude_deg)
         }
     }
 }
 
-function getRouteCoords(iata) {
-    const routeData = routes[iata];
-    const mainCoords = getAirportCoords(iata);
+function getRouteCoords(icao) {
+    const routeData = routes[icao];
+    const homeCoords = getAirportCoords(icao);
     const coords = {};
 
-    if (routeData && mainCoords) {
-        coords[iata] = mainCoords;
+    if (routeData && homeCoords) {
+        coords[icao] = homeCoords;
         routeData.forEach(route => {
-            const iata = route.destination;
-            const c = getAirportCoords(iata);
-            if (c) coords[iata] = c;
+            const icao = route.destination;
+            const c = getAirportCoords(icao);
+            if (c) coords[icao] = c;
         });
         return coords;
     }

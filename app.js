@@ -4,9 +4,11 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const getData = require('./getData.js');
+const getData = require('./api.js');
 
 const app = express();
+
+const DEFAULT_ICAO = 'KIND';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,24 +23,35 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
     res.render('index', {
-        title: 'IND Route Map'
+        icao: DEFAULT_ICAO
     });
 });
 
-app.get('/api/routes/:iata', (req, res, next) => {
-    const iata = req.params.iata.toUpperCase();
-    const routes = getData.routes(iata);
+app.get('/:icao', (req, res, next) => {
+    const icao = req.params.icao.toUpperCase();
+    const routes = getData.routes(icao);
+    if (routes) {
+        res.render('index', {
+            icao: icao
+        });
+    }
+    else next();
+});
+
+app.get('/api/routes/:icao', (req, res, next) => {
+    const icao = req.params.icao.toUpperCase();
+    const routes = getData.routes(icao);
     if (routes) res.status(200).send(routes);
     else next();
 });
 
-app.get('/api/coords/:type/:iata', (req, res, next) => {
-    const iata = req.params.iata.toUpperCase();
+app.get('/api/coords/:type/:icao', (req, res, next) => {
+    const icao = req.params.icao.toUpperCase();
     const type = req.params.type;
 
     let coords = {};
-    if (type == 'airports') coords = getData.airportCoords(iata);
-    else if (type == 'routes') coords = getData.routeCoords(iata);
+    if (type == 'airport') coords = getData.airportCoords(icao);
+    else if (type == 'routes') coords = getData.routeCoords(icao);
     else next();
 
     if (coords) res.status(200).send(coords);

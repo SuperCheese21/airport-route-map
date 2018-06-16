@@ -21,20 +21,20 @@ function parseData(csv) {
         if (!index) return;
 
         const airport = line.split(',').map(item => item.replace(/"/g, ''));
-        const code = airport[13];
-        if (!code) return;
+        const icao = airport[1];
+        if (!icao) return;
 
-        console.log('Parsing ' + code);
+        console.log('Parsing ' + icao);
 
         let data = {};
         for (let i = 0; i < headers.length; i++) {
             data[headers[i]] = airport[i];
         }
 
-        json[code] = data;
+        json[icao] = data;
     });
 
-    writeJson(JSON.stringify(json, null, '\t'), './airports.json');
+    writeJson(JSON.stringify(json, null, '\t'), './data/airports.json');
 }
 
 function writeJson(json, path) {
