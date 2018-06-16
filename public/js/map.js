@@ -43,7 +43,7 @@ function plotAirports(map) {
         strokeColor: 'black',
         strokeWeight: 2.5
     };
-
+    
     routes.forEach(airport => {
         const icao = airport.destination;
         const marker = createMarker(map, icao, inactiveIcon);
@@ -52,13 +52,15 @@ function plotAirports(map) {
         marker.addListener('mouseover', () => {
             marker.setOptions({ icon: activeIcon });
             polyline.setOptions({
-                strokeColor: 'yellow'
+                strokeColor: 'yellow',
+                strokeWeight: 2
             });
         });
         marker.addListener('mouseout', () => {
             marker.setOptions({ icon: inactiveIcon });
             polyline.setOptions({
-                strokeColor: 'red'
+                strokeColor: 'red',
+                strokeWeight: 2
             });
         });
         marker.addListener('click', () => {

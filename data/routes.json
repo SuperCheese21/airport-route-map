@@ -405,6 +405,15 @@
             "iata": "UA",
             "operatorIata": "UA"
         }]
+    }, {
+        "destination": "KLGA",
+        "airlines": [{
+            "iata": "AA",
+            "operatorIata": "AA"
+        }, {
+            "iata": "DL",
+            "operatorIata": "DL"
+        }]
     }],
     "KPDX": [{
 		"destination": "KPDX"
