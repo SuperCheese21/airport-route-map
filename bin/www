@@ -5,7 +5,7 @@
  */
 
 const app = require('../app');
-const debug = require('debug')('ind-route-map:server');
+const debug = require('debug')('airport-route-map:server');
 const http = require('http');
 
 /**

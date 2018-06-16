@@ -1,6 +1,4 @@
-let routes = {};
-let coords = {};
-let paths = {};
+let routes = {}, coords = {}, paths = {};
 
 function initMap() {
     const map = new google.maps.Map(document.getElementById('map'), {
@@ -31,19 +29,19 @@ function initMap() {
 function plotAirports(map) {
     const inactiveIcon = {
         path: google.maps.SymbolPath.CIRCLE,
-        scale: 3,
+        scale: 4,
         fillColor: 'white',
         fillOpacity: 1,
         strokeColor: 'black',
-        strokeWeight: 2
+        strokeWeight: 2.5
     };
     const activeIcon = {
         path: google.maps.SymbolPath.CIRCLE,
-        scale: 4,
+        scale: 6,
         fillColor: 'yellow',
         fillOpacity: 1,
         strokeColor: 'black',
-        strokeWeight: 2
+        strokeWeight: 2.5
     };
 
     routes.forEach(airport => {
