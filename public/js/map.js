@@ -1,5 +1,6 @@
 let routes = {};
 let coords = {};
+let paths = {};
 
 function initMap() {
     const map = new google.maps.Map(document.getElementById('map'), {
@@ -28,39 +29,70 @@ function initMap() {
 }
 
 function plotAirports(map) {
-    let paths = {};
-    let homeCoords = coords[homeIcao];
+    const inactiveIcon = {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 3,
+        fillColor: 'white',
+        fillOpacity: 1,
+        strokeColor: 'black',
+        strokeWeight: 2
+    };
+    const activeIcon = {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 4,
+        fillColor: 'yellow',
+        fillOpacity: 1,
+        strokeColor: 'black',
+        strokeWeight: 2
+    };
 
-    routes.forEach((airport) => {
-        const iata = airport.destination;
-        paths[iata] = {
-            marker: plotMarker(map, iata),
-            polyline: plotPolyline(map, iata)
+    routes.forEach(airport => {
+        const icao = airport.destination;
+        const marker = createMarker(map, icao, inactiveIcon);
+        const polyline = createPolyline(map, icao, inactiveIcon);
+
+        marker.addListener('mouseover', () => {
+            marker.setOptions({ icon: activeIcon });
+            polyline.setOptions({
+                strokeColor: 'yellow'
+            });
+        });
+        marker.addListener('mouseout', () => {
+            marker.setOptions({ icon: inactiveIcon });
+            polyline.setOptions({
+                strokeColor: 'red'
+            });
+        });
+        marker.addListener('click', () => {
+            alert(icao);
+        });
+
+        paths[icao] = {
+            marker: marker,
+            polyline: polyline
         };
     });
 
     return paths;
 }
 
-function plotMarker(map, iata) {
-    const destCoords = coords[iata];
+function createMarker(map, icao, icon) {
     return new google.maps.Marker({
-        position: destCoords,
-        title: iata,
+        position: coords[icao],
+        icon: icon,
+        title: icao,
         map: map
     });
 }
 
-function plotPolyline(map, iata) {
-    const homeCoords = coords[homeIcao];
-    const destCoords = coords[iata];
-
+function createPolyline(map, icao) {
     return new google.maps.Polyline({
-        path: [homeCoords, destCoords],
+        path: [coords[homeIcao], coords[icao]],
         geodesic: true,
-        strokeColor: '#FF0000',
+        strokeColor: 'red',
         strokeOpacity: 1.0,
-        strokeWeight: 1.5,
+        strokeWeight: 1.2,
+        clickable: false,
         map: map
     });
 }

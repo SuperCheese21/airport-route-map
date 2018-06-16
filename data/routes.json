@@ -1,5 +1,7 @@
 {
     "KIND": [{
+		"destination": "KIND"
+	}, {
         "destination": "KLAX",
         "airlines": [{
             "iata": "WN",
@@ -405,6 +407,8 @@
         }]
     }],
     "KPDX": [{
+		"destination": "KPDX"
+	}, {
         "destination": "MMMX",
         "airlines": [{
             "iata": "AM",

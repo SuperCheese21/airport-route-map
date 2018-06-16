@@ -17,11 +17,9 @@ function getAirportCoords(icao) {
 
 function getRouteCoords(icao) {
     const routeData = routes[icao];
-    const homeCoords = getAirportCoords(icao);
     const coords = {};
 
-    if (routeData && homeCoords) {
-        coords[icao] = homeCoords;
+    if (routeData) {
         routeData.forEach(route => {
             const icao = route.destination;
             const c = getAirportCoords(icao);
