@@ -34,7 +34,7 @@ function parseData(csv) {
         json[code] = data;
     });
 
-    writeJson(JSON.stringify(json, null, '\t'), './data/airports.json');
+    writeJson(JSON.stringify(json, null, '\t'), './airports.json');
 }
 
 function writeJson(json, path) {
