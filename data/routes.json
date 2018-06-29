@@ -5,7 +5,8 @@
         "destination": "KLAX",
         "airlines": [{
             "iata": "WN",
-            "operatorIata": "WN"
+            "operatorIata": "WN",
+            "seasonal": true
         }, {
             "iata": "AA",
             "operatorIata": "AA"
@@ -217,7 +218,8 @@
         "destination": "KEWR",
         "airlines": [{
             "iata": "WN",
-            "operatorIata": "WN"
+            "operatorIata": "WN",
+            "end": "2019-01-06"
         }, {
             "iata": "UA",
             "operatorIata": "UA"
@@ -651,6 +653,9 @@
 		"airlines": [{
 			"iata": "AS",
 			"operatorIata": "AS"
+		}, {
+			"iata": "UA",
+			"operatorIata": "UA"
 		}]
 	}, {
 		"destination": "KJFK",
@@ -1015,12 +1020,6 @@
 		}]
 	}, {
 		"destination": "KIAH",
-		"airlines": [{
-			"iata": "UA",
-			"operatorIata": "UA"
-		}]
-	}, {
-		"destination": "KEWR",
 		"airlines": [{
 			"iata": "UA",
 			"operatorIata": "UA"
