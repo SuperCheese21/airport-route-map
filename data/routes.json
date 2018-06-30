@@ -1,6 +1,7 @@
 {
     "KIND": [{
-		"destination": "KIND"
+		"destination": "KIND",
+        "updated": "2018-06-30"
 	}, {
         "destination": "KLAX",
         "airlines": [{
@@ -152,8 +153,7 @@
         "destination": "MMUN",
         "airlines": [{
             "iata": "WN",
-            "operatorIata": "WN",
-            "seasonal": true
+            "operatorIata": "WN"
         }, {
             "iata": "DL",
             "operatorIata": "DL",
