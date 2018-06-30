@@ -9,6 +9,18 @@ a {
     color: #00B7FF;
 }
 
-#map {
+.map-container {
     height: 80%;
+}
+
+.map-row {
+    height: 100%;
+}
+
+.title-bar {
+    height: 60px;
+}
+
+.page-title {
+    font-size: 24px;
 }
