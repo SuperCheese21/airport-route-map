@@ -24,3 +24,14 @@ a {
 .page-title {
     font-size: 24px;
 }
+
+.info-panel {
+    background-color: lightgrey;
+}
+
+.airline-logo {
+}
+
+.flight-info {
+    display: inline-block;
+}

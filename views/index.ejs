@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <title>
-        <%= icao %> Route Map</title>
+    <title><%= icao %> Route Map</title>
 
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
@@ -11,7 +10,7 @@
     <script src="/js/map.js"></script>
 
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-e5ln1YQrCh2KTj0GVDWxOfDZ53Fd5Uss2u08OZUtzZNrxWfeYC4P7VBWHRDPvJUk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
@@ -35,7 +34,28 @@
     <div class="container-fluid map-container">
         <div class="row map-row">
             <div class="col-9" id="map"></div>
-            <div class="col">test</div>
+            <div class="col info-panel">
+
+                <div class="card">
+                    <img class="card-img-top airline-logo" src="/assets/logos/AS.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Operated by Alaska Airlines</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <p class="card-text"><i class="fas fa-users"></i> Passenger</p>
+                                </div>
+                                <div class="col-sm">
+                                    <p class="card-text"><i class="far fa-clock"></i> Year-Round</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p class="card-text"><i>Ends on August 8, 2018</i></p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 

@@ -8,7 +8,7 @@ const getData = require('./api.js');
 
 const app = express();
 
-const DEFAULT_ICAO = 'KIND';
+const DEFAULT_ICAO = 'KPDX';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
