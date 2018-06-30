@@ -315,7 +315,7 @@
     }, {
         "destination": "KSAV",
         "airlines": [{
-            "iata": "G4"
+            "iata": "G4",
             "seasonal": true
         }]
     }, {

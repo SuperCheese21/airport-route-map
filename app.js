@@ -58,6 +58,15 @@ app.get('/api/coords/:type/:icao', (req, res, next) => {
     else next();
 });
 
+app.get('/api/airlines/:icao1/:icao2', (req, res, next) => {
+    const icao1 = req.params.icao1.toUpperCase();
+    const icao2 = req.params.icao2.toUpperCase();
+    const airlines = getData.airlines(icao1, icao2);
+
+    if (airlines) res.status(200).send(airlines);
+    else next();
+});
+
 app.get('*', (req, res, next) => {
     next(createError(404));
 });

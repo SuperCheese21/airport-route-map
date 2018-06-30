@@ -5,6 +5,17 @@ function getRoutes(icao) {
     return routes[icao];
 }
 
+function getAirlines(icao1, icao2) {
+    const routes = getRoutes(icao1);
+    if (routes) {
+        for (var i = 0; i < routes.length; i++) {
+            if (routes[i].destination == icao2) {
+                return routes[i];
+            }
+        }
+    }
+}
+
 function getAirportCoords(icao) {
     const airport = airportData[icao];
     if (airport) {
@@ -31,6 +42,7 @@ function getRouteCoords(icao) {
 
 module.exports = {
     routes: getRoutes,
+    airlines: getAirlines,
     airportCoords: getAirportCoords,
     routeCoords: getRouteCoords
 };
