@@ -10,7 +10,9 @@ a {
 }
 
 .map-container {
-    height: 80%;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
 }
 
 .map-row {
