@@ -31,7 +31,7 @@ app.get('/:icao', (req, res, next) => {
     const icao = req.params.icao.toUpperCase();
     const routes = getData.routes(icao);
     if (routes) {
-        res.render('index', {
+        res.render('map', {
             icao: icao
         });
     }
@@ -41,6 +41,7 @@ app.get('/:icao', (req, res, next) => {
 app.get('/api/routes/:icao', (req, res, next) => {
     const icao = req.params.icao.toUpperCase();
     const routes = getData.routes(icao);
+
     if (routes) res.status(200).json(routes);
     else next();
 });
@@ -48,11 +49,7 @@ app.get('/api/routes/:icao', (req, res, next) => {
 app.get('/api/coords/:type/:icao', (req, res, next) => {
     const icao = req.params.icao.toUpperCase();
     const type = req.params.type;
-
-    let coords = {};
-    if (type == 'airport') coords = getData.airportCoords(icao);
-    else if (type == 'routes') coords = getData.routeCoords(icao);
-    else next();
+    const coords = getData.coords(icao, type);
 
     if (coords) res.status(200).json(coords);
     else next();
