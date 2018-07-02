@@ -10,7 +10,7 @@ function getAirlines(icao1, icao2) {
     if (routes) {
         for (var i = 0; i < routes.length; i++) {
             if (routes[i].destination == icao2) {
-                return routes[i];
+                return routes[i].airlines;
             }
         }
     }

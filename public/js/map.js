@@ -43,7 +43,7 @@ function plotAirports(map) {
         strokeColor: 'black',
         strokeWeight: 2.5
     };
-    
+
     routes.forEach(airport => {
         const icao = airport.destination;
         const marker = createMarker(map, icao, inactiveIcon);
@@ -64,7 +64,9 @@ function plotAirports(map) {
             });
         });
         marker.addListener('click', () => {
-            alert(icao);
+            $.getJSON('/api/airlines/' + homeIcao + '/' + icao, json => {
+                console.log(json);
+            });
         });
 
         paths[icao] = {

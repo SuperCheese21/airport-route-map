@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res, next) => {
-    res.render('index', {
+    res.render('map', {
         icao: DEFAULT_ICAO
     });
 });
@@ -41,7 +41,7 @@ app.get('/:icao', (req, res, next) => {
 app.get('/api/routes/:icao', (req, res, next) => {
     const icao = req.params.icao.toUpperCase();
     const routes = getData.routes(icao);
-    if (routes) res.status(200).send(routes);
+    if (routes) res.status(200).json(routes);
     else next();
 });
 
@@ -54,7 +54,7 @@ app.get('/api/coords/:type/:icao', (req, res, next) => {
     else if (type == 'routes') coords = getData.routeCoords(icao);
     else next();
 
-    if (coords) res.status(200).send(coords);
+    if (coords) res.status(200).json(coords);
     else next();
 });
 
@@ -63,7 +63,7 @@ app.get('/api/airlines/:icao1/:icao2', (req, res, next) => {
     const icao2 = req.params.icao2.toUpperCase();
     const airlines = getData.airlines(icao1, icao2);
 
-    if (airlines) res.status(200).send(airlines);
+    if (airlines) res.status(200).json(airlines);
     else next();
 });
 
