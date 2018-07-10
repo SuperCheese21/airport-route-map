@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const exphbs = require('express-handlebars');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -10,10 +11,9 @@ const app = express();
 
 const DEFAULT_ICAO = 'KPDX';
 
-// view engine setup
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
 
 app.use(logger('dev'));
 app.use(express.json());

@@ -1,4 +1,4 @@
-let routes = {}, coords = {}, paths = {};
+let routes = {}, coords = {};
 
 function initMap() {
     const map = new google.maps.Map(document.getElementById('map'), {
@@ -68,14 +68,7 @@ function plotAirports(map) {
                 console.log(json);
             });
         });
-
-        paths[icao] = {
-            marker: marker,
-            polyline: polyline
-        };
     });
-
-    return paths;
 }
 
 function createMarker(map, icao, icon) {
