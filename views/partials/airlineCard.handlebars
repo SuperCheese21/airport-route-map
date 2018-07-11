@@ -2,6 +2,8 @@
 
     <div class="card-body">
 
+        <h4 class="card-title">{{airline.iata}}</h4>
+
         {{#if airline.operatorIata}}
             <h5 class="card-title">Operated by {{airline.operatorIata}}</h5>
         {{/if}}
@@ -11,14 +13,14 @@
                 <div class="col-sm">
                     {{#if airline.cargo}}
                         <p class="card-text"><i class="fas fa-box-open"></i> Cargo</p>
-                    {{#else}}
+                    {{else}}
                         <i class="fas fa-users"></i> Passenger</p>
                     {{/if}}
                 </div>
                 <div class="col-sm">
                     {{#if airline.seasonal}}
                         <p class="card-text"><i class="far fa-clock"></i> Seasonal</p>
-                    {{#else}}
+                    {{else}}
                         <p class="card-text"><i class="far fa-clock"></i> Year-Round</p>
                     {{/if}}
                 </div>
@@ -29,7 +31,8 @@
 
         {{#if airline.start}}
             <p class="card-text"><i>Starts on {{airline.start}}</i></p>
-        {{#else}}
+        {{/if}}
+        {{#if airline.end}}
             <p class="card-text"><i>Ends on {{airline.end}}</i></p>
         {{/if}}
 

@@ -64,8 +64,15 @@ function plotAirports(map) {
             });
         });
         marker.addListener('click', () => {
+            $('.info-panel').empty();
             $.getJSON('/api/airlines/' + homeIcao + '/' + icao, json => {
                 console.log(json);
+                json.forEach(airline => {
+                    const airlineCard = Handlebars.templates.airlineCard({
+                        airline: airline
+                    });
+                    $('.info-panel').append(airlineCard);
+                });
             });
         });
     });

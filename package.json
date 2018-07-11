@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "update": "node ./data/updateData.js"
+    "update": "node ./data/updateData.js",
+    "build": "handlebars ./views/partials/airlineCard.handlebars -f ./public/js/airlineCard.js",
+    "prestart": "npm run build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
