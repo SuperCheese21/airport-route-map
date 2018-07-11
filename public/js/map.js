@@ -10,6 +10,8 @@ function initMap() {
         disableDefaultUI: true
     });
 
+    $('.panel-title').text(homeIcao);
+
     $.getJSON('js/map_style.json', json => {
         map.setOptions({
             styles: json
@@ -64,7 +66,8 @@ function plotAirports(map) {
             });
         });
         marker.addListener('click', () => {
-            $('.info-panel').empty();
+            $('.panel-title').text(icao);
+            $('.card').remove();
             $.getJSON('/api/airlines/' + homeIcao + '/' + icao, json => {
                 console.log(json);
                 json.forEach(airline => {
