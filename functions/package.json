@@ -7,6 +7,7 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
+    "test": "firebase serve --only hosting,functions",
     "update": "node ./data/updateData.js",
     "build": "handlebars ./views/partials/airlineCard.handlebars -f ../public/js/airlineCard.js",
     "prestart": "npm run build"

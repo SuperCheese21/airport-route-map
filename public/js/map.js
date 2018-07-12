@@ -68,7 +68,9 @@ function plotAirports(map) {
         marker.addListener('click', () => {
             $('.panel-title').text(icao);
             $('.card').remove();
+            $('.info-panel').append(getSpinnerIcon());
             $.getJSON('/api/airlines/' + homeIcao + '/' + icao, json => {
+                $('.spinner').remove();
                 console.log(json);
                 json.forEach(airline => {
                     const airlineCard = Handlebars.templates.airlineCard({
@@ -100,4 +102,8 @@ function createPolyline(map, icao) {
         clickable: false,
         map: map
     });
+}
+
+function getSpinnerIcon() {
+    return $('<i>').addClass('fas fa-spinner spinner');
 }
