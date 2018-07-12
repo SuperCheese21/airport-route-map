@@ -1,14 +1,19 @@
 {
   "name": "airport-route-map",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
     "update": "node ./data/updateData.js",
     "build": "handlebars ./views/partials/airlineCard.handlebars -f ./public/js/airlineCard.js",
     "prestart": "npm run build"
   },
   "dependencies": {
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
@@ -18,5 +23,6 @@
     "morgan": "~1.9.0",
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
-  }
+  },
+  "private": true
 }
