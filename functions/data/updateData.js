@@ -1,10 +1,10 @@
 const fs = require('fs');
 const rp = require('request-promise');
-const AIRPORT_URL = 'http://ourairports.com/data/airports.csv';
+const URL = 'http://ourairports.com/data/airports.csv';
 
 console.log('Requesting latest airports data file from ' + AIRPORT_URL + '...');
 
-rp(AIRPORT_URL)
+rp(URL)
     .then((data) => {
         parseData(data);
     })
@@ -18,11 +18,10 @@ function parseData(csv) {
     let json = {};
 
     airports.forEach((line, index) => {
-        if (!index) return;
-
         const airport = line.split(',').map(item => item.replace(/"/g, ''));
         const icao = airport[1];
-        if (!icao) return;
+        const iata = airport[13];
+        if (!icao || !iata || !index) return;
 
         console.log('Parsing ' + icao);
 

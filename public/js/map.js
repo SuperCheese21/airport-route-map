@@ -67,6 +67,7 @@ function plotAirports(map) {
         });
         marker.addListener('click', () => {
             $('.panel-title').text(icao);
+            $('.spinner').remove();
             $('.card').remove();
             $('.info-panel').append(getSpinnerIcon());
             $.getJSON('/api/airlines/' + homeIcao + '/' + icao, json => {
