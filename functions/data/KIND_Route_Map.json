@@ -1,0 +1,324 @@
+[{
+    "destination": "KIND",
+    "updated": "2019-03-07"
+}, {
+    "destination": "KLAX",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "AA"
+	}, {
+        "iata": "DL"
+    }]
+}, {
+    "destination": "KAUS",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "G4"
+    }]
+}, {
+    "destination": "KATL",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "DL"
+    }]
+}, {
+	"destination": "KBOS",
+    "airlines": [{
+        "iata": "WN"
+		"end": "2019-09-28"
+	}, {
+        "iata": "DL"
+    }]
+}, {
+    "destination": "KCLT",
+    "airlines": [{
+        "iata": "AA"
+    }]
+}, {
+    "destination": "KDFW",
+    "airlines": [{
+        "iata": "AA"
+    }]
+}, {
+    "destination": "KVPS",
+    "airlines": [{
+        "iata": "G4",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KJAX",
+    "airlines": [{
+        "iata": "G4"
+	}]
+}, {
+    "destination": "KMYR",
+    "airlines": [{
+        "iata": "G4",
+		"seasonal": true
+	}, {
+        "iata": "NK",
+		"seasonal": true,
+		"start": "2019-05-02"
+    }]
+}, {
+    "destination": "KRSW",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "DL",
+		"seasonal": true
+	}, {
+        "iata": "F9",
+		"seasonal": true
+	}, {
+        "iata": "NK",
+		"start": "2019-11-14"
+    }]
+}, {
+    "destination": "KMCO",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "DL"
+	}, {
+        "iata": "F9"
+	}, {
+        "iata": "NK"
+    }]
+}, {
+    "destination": "KPHL",
+    "airlines": [{
+        "iata": "AA"
+	}]
+}, {
+    "destination": "KRDU",
+    "airlines": [{
+        "iata": "DL"
+    }]
+}, {
+    "destination": "KSFO",
+    "airlines": [{
+        "iata": "UA"
+    }]
+}, {
+    "destination": "KSEA",
+    "airlines": [{
+        "iata": "AS"
+	}, {
+        "iata": "DL"
+    }]
+}, {
+    "destination": "CYYZ",
+    "airlines": [{
+        "iata": "AC"
+	}, {
+    }]
+}, {
+    "destination": "MMUN",
+    "airlines": [{
+        "iata": "WN",
+		"seasonal":true
+	}, {
+        "iata": "DL",
+		"seasonal": true
+	}, {
+        "iata": "G4",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KMDW",
+    "airlines": [{
+        "iata": "WN"
+    }]
+}, {
+    "destination": "KDAL",
+    "airlines": [{
+        "iata": "WN"
+    }]
+}, {
+    "destination": "KDTW",
+    "airlines": [{
+        "iata": "DL"
+    }]
+}, {
+    "destination": "KHOU",
+    "airlines": [{
+        "iata": "WN"
+    }]
+}, {
+    "destination": "KMCI",
+    "airlines": [{
+        "iata": "WN"
+    }]
+}, {
+    "destination": "KMIA",
+    "airlines": [{
+        "iata": "AA"
+	}, {
+        "iata": "DL",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KMSY",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "G4",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KEWR",
+    "airlines": [{
+        "iata": "UA"
+    }]
+}, {
+    "destination": "KSFB",
+    "airlines": [{
+        "iata": "G4"
+    }]
+}, {
+    "destination": "KPHX",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "AA"
+    }]
+}, {
+    "destination": "MDPC",
+    "airlines": [{
+        "iata": "G4",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KSLC",
+    "airlines": [{
+        "iata": "DL"
+    }]
+}, {
+    "destination": "KSRQ",
+    "airlines": [{
+        "iata": "G4"
+    }]
+}, {
+    "destination": "KPIE",
+    "airlines": [{
+        "iata": "G4"
+    }]
+}, {
+    "destination": "KDCA",
+    "airlines": [{
+        "iata": "AA"
+    }]
+}, {
+    "destination": "KBWI",
+    "airlines": [{
+        "iata": "WN"
+    }]
+}, {
+    "destination": "KCHS",
+    "airlines": [{
+        "iata": "G4",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KORD",
+    "airlines": [{
+        "iata": "UA"
+	}, {
+        "iata": "AA",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KDEN",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "F9"
+	}, {
+        "iata": "UA"
+    }]
+}, {
+    "destination": "KFLL",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "G4"
+    }]
+}, {
+    "destination": "KIAH",
+    "airlines": [{
+        "iata": "UA"
+    }]
+}, {
+    "destination": "KLAS",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "F9"
+	}, {
+        "iata": "G4"
+	}, {
+        "iata": "NK"
+    }]
+}, {
+    "destination": "KMSP",
+    "airlines": [{
+        "iata": "DL"
+	}]
+}, {
+    "destination": "KJFK",
+    "airlines": [{
+        "iata": "AA"
+	}, {
+        "iata": "DL"
+    }]
+}, {
+    "destination": "KOAK",
+    "airlines": [{
+        "iata": "WN"
+    }]
+}, {
+    "destination": "LFPG",
+    "airlines": [{
+        "iata": "DL"
+    }]
+}, {
+    "destination": "KIWA",
+    "airlines": [{
+        "iata": "G4",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KPGD",
+    "airlines": [{
+        "iata": "G4"
+    }]
+}, {
+    "destination": "KSAN",
+    "airlines": [{
+        "iata": "WN",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KSAV",
+    "airlines": [{
+        "iata": "G4",
+		"seasonal": true
+    }]
+}, {
+    "destination": "KTPA",
+    "airlines": [{
+        "iata": "WN"
+	}, {
+        "iata": "NK"
+		"start": "2019-11-14"
+    }]
+}, {
+    "destination": "KIAD",
+    "airlines": [{
+        "iata": "UA"
+    }]
+}]
